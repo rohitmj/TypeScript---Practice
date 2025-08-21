@@ -1,9 +1,10 @@
 
-/**
- * Reverse a string
- */
-function reverseString(name: string): string {
-  return name.split("").reverse().join("");
+// reverseString.ts
+export function reverseString(s: string): string {
+  return s.split('').reverse().join('');
 }
 
-console.log(reverseString("trollo")); // "ollort"
+// Tests
+console.log(reverseString("hello") === "olleh");
+console.log(reverseString("TypeScript") === "tpircSepyT");
+console.log(reverseString("") === "");
